@@ -1,7 +1,8 @@
 let osc, playing, freq, amp;
 
 function setup() {
-  let cnv = createCanvas(100, 100);
+  //let cnv = createCanvas(100, 100);
+    let cnv = createCanvas(windowWidth*1.0, windowHeight*1.0,WEBGL);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
 }
